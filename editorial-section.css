@@ -1,0 +1,144 @@
+/* Stili per la sezione Gli editoriali */
+.editoriali-section {
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+/* Intestazione sezione */
+.section-header {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #000;
+    padding-left: 0;
+    display: inline-block; /* Importante: rende il titolo inline-block */
+    position: relative; /* Per posizionare la linea blu sotto */
+}
+
+/* Rimuoviamo la linea completa */
+.section-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 15px;
+    height: 1px;
+    background-color: #d5dbe0; /* Colore grigio chiaro per la linea principale */
+}
+
+/* Aggiungiamo la linea blu solo sotto il titolo */
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Ridotto da 3px a 2px per un effetto meno marcato ma comunque visibile */
+    background-color: #003660; /* Cambiato al colore della top bar (--primary-blue) */
+}
+
+/* Contenitore delle card editoriali */
+.editorial-container {
+    margin: 0;
+    background-color: #f3f7fa;
+    padding: 20px 0 0 0;
+    border-radius: 0;
+    position: relative;
+}
+
+/* Add bottom border to close the section */
+.editorial-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Allinea la linea a sinistra */
+    right: 15px;
+    height: 1px;
+    background-color: #d5dbe0;
+}
+
+/* Card editoriale */
+.editorial-card {
+    margin: 0 0 20px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+}
+
+/* Add vertical divider between cards */
+.col-lg-3:not(:last-child) .editorial-card::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    height: 100%; /* Estesa al 100% dell'altezza per renderla più lunga */
+    width: 1px;
+    background-color: #d5dbe0;
+}
+
+/* Immagine dell'autore */
+.author-image {
+    margin: 0 10px 0 0;
+    flex-shrink: 0;
+}
+
+.author-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Contenuto editoriale */
+.editorial-content {
+    flex-grow: 1;
+}
+
+/* Titolo dell'articolo */
+.article-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 6px;
+    color: #000;
+}
+
+/* Nome dell'autore */
+.author-name {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #006699;
+    display: block;
+}
+
+/* Responsive design - Utilizziamo le classi Bootstrap per la responsività */
+@media (max-width: 992px) {
+    /* Remove vertical dividers in tablet view */
+    .col-lg-3:not(:last-child) .editorial-card::after {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 20px;
+    }
+
+    .author-image img {
+        width: 50px;
+        height: 50px;
+    }
+}
