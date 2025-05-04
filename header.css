@@ -107,6 +107,7 @@ body {
     align-items: center;
     position: relative;
     min-height: 80px; /* Aggiunto per garantire un'altezza minima */
+
 }
 
 .date-time {
