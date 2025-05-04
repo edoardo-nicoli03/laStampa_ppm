@@ -1,6 +1,4 @@
-/* Stili per la sezione In evidenza e Video e podcast */
 
-/* Articolo principale */
 .main-article {
     position: relative;
     margin-bottom: 30px;
@@ -16,13 +14,14 @@
 }
 
 .tag-label {
-    background-color: #d32f2f;
+    background-color: #B92A36;
     color: white;
     font-size: 12px;
     font-weight: 600;
     padding: 3px 8px;
     text-transform: uppercase;
     display: inline-block;
+    border-radius: 6px;
 }
 
 .highlights-section .article-title {
@@ -34,12 +33,12 @@
 }
 
 .highlights-section .article-title a {
-    color: #0066a4;
+    color: #0C2230;
     text-decoration: none;
 }
 
 .highlights-section .article-title a:hover {
-    text-decoration: underline;
+    color: rgb(58, 125, 181) ;
 }
 
 .article-byline {
@@ -200,26 +199,26 @@
     height: auto;
 }
 
-/* Update label styling to match screenshot */
 .update-label {
-    background-color: #d32f2f;
+    background-color: #B92A36;
     color: white;
     font-size: 12px;
     font-weight: 600;
     padding: 3px 8px;
     text-transform: uppercase;
     display: inline-block;
+    border-radius: 6px;
 }
 
 .category-label {
-    color: #d32f2f;
+    color: #245D8B;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
 }
 
-/* Update title styling to match screenshot */
+
 .top-story-title {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
@@ -227,6 +226,7 @@
     line-height: 1.2;
     margin: 8px 0;
     max-width: 732px;
+    color: #0C2230;
 }
 
 .top-story-title a {
@@ -235,7 +235,7 @@
 }
 
 .top-story-title a:hover {
-    text-decoration: underline;
+   color : rgb(58, 125, 181);
 }
 
 .article-byline {
@@ -284,12 +284,12 @@
 }
 
 .secondary-story-title a {
-    color: #003366;
+    color: #0C2230;
     text-decoration: none;
 }
 
 .secondary-story-title a:hover {
-    text-decoration: underline;
+    color: rgb(58, 125, 181);
 }
 
 /* Responsive adjustments */
@@ -331,7 +331,7 @@
 
 /* VIDEO SECTION */
 .video-section {
-    background-color: #1e2126; /* Changed to match the screenshot - dark navy/charcoal */
+    background-color: #1e2126;
     color: #fff;
     padding: 30px 0;
     margin-top: 40px;
@@ -379,8 +379,8 @@
 .video-card {
     position: relative;
     overflow: hidden;
-    background-color: #252830; /* Slightly lighter background for the card */
-    border-radius: 8px; /* Add rounded corners to the entire card */
+    background-color: #151A28;
+    border-radius: 8px;
 }
 
 .video-card-image {
@@ -392,15 +392,15 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px 8px 0 0; /* Rounded corners only on top */
+    border-radius: 8px 8px 0 0;
 }
 
 .video-card-content {
-    padding: 15px; /* Add more padding around the content */
+    padding: 15px;
 }
 
 .video-card-tag {
-    color: #4a90e2;
+    color: #9AACBF;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -421,10 +421,10 @@
 }
 
 .video-card-title a:hover {
-    text-decoration: underline;
+   color : rgb(16, 55, 96);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 991px) {
     .video-grid {
         max-width: 100%;
@@ -469,7 +469,7 @@
     font-weight: 700;
     margin: 0;
     padding-bottom: 5px;
-    color: #000;
+    color: #0C2230;
     display: inline-block;
     position: relative;
 }
@@ -484,7 +484,7 @@
     background-color: #003660;
 }
 
-/* Main featured article */
+
 .sport-main-article {
     display: flex;
     gap: 20px;
@@ -494,7 +494,7 @@
 }
 
 .sport-main-image {
-    flex: 0 0 350px; /* Fixed width for the image */
+    flex: 0 0 350px;
     margin-bottom: 0;
 }
 
@@ -503,13 +503,16 @@
     height: auto;
     display: block;
 }
+.sport-main-image:hover {
+    cursor: pointer;
+}
 
 .sport-main-content {
-    flex: 1; /* Take remaining space */
+    flex: 1;
 }
 
 .sport-category {
-    color: #0066a4;
+    color: #245D8B;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -524,7 +527,6 @@
     margin: 8px 0;
 }
 
-/* Responsive adjustments for main article */
 @media (max-width: 767px) {
     .sport-main-article {
         flex-direction: column;
@@ -543,7 +545,7 @@
 }
 
 .sport-main-title a:hover {
-    text-decoration: underline;
+    color: rgb(58, 125, 181);
 }
 
 .sport-author {
@@ -580,6 +582,9 @@
     height: auto;
     display: block;
 }
+.sport-card-image:hover {
+    cursor: pointer;
+}
 
 .sport-card-title {
     font-family: 'Playfair Display', serif;
@@ -595,7 +600,7 @@
 }
 
 .sport-card-title a:hover {
-    text-decoration: underline;
+   color : rgb(58, 125, 181);
 }
 
 /* Responsive adjustments */
@@ -691,14 +696,14 @@
 }
 
 .article-image {
-    flex: 0 0 207px; /* Match the width from the screenshot */
+    flex: 0 0 207px;
 }
 
 .article-image img {
     width: 100%;
-    height: 116px; /* Match the height from the screenshot */
+    height: 116px;
     display: block;
-    object-fit: cover; /* Ensure images maintain aspect ratio */
+    object-fit: cover;
 }
 
 .article-content {
@@ -706,7 +711,7 @@
 }
 
 .article-category {
-    color: #0066a4;
+    color: #245D8B;
     font-size: 14px; /* Increased font size */
     font-weight: 600;
     text-transform: uppercase;
@@ -715,15 +720,15 @@
 
 .article-title {
     font-family: 'Playfair Display', serif;
-    font-size: 24px; /* Increased font size from 20px to 24px */
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.3;
     margin: 8px 0;
-    color: #0C2230; /* Adjusted color to match screenshot */
+    color: #0C2230;
 }
 
 .article-title a {
-    color: #0C2230; /* Adjusted color to match screenshot */
+    color: #0C2230;
     text-decoration: none;
 }
 
