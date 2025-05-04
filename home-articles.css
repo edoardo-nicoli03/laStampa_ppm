@@ -718,20 +718,20 @@
     margin-bottom: 8px;
 }
 
-.article-title {
+
+.article-title a {
+
+    text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-size: 23px;
     font-weight: 700;
     line-height: 1.3;
     margin: 8px 0;
     color: #0C2230;
 }
-
-.article-title a {
-    color: #0C2230;
-    text-decoration: none;
+.article-title a:hover {
+    color: rgb(58, 125, 181);
 }
-
 .article-category {
     color: #0066a4;
     font-size: 15px; /* Slightly increased font size */
