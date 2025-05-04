@@ -297,11 +297,11 @@
     .secondary-stories-row {
         gap: 20px;
     }
-    
+
     .top-story-secondary {
         flex: 0 0 calc(50% - 10px);
     }
-    
+
     .secondary-story-title {
         font-size: 15px;
     }
@@ -312,7 +312,7 @@
         flex-direction: column;
         gap: 25px;
     }
-    
+
     .top-story-secondary {
         flex: 1 1 100%;
         max-width: 100%;
@@ -323,7 +323,7 @@
     .top-story-title {
         font-size: 20px;
     }
-    
+
     .secondary-story-title {
         font-size: 16px;
     }
@@ -429,7 +429,7 @@
     .video-grid {
         max-width: 100%;
     }
-    
+
     .video-card-title {
         font-size: 16px;
     }
@@ -440,7 +440,7 @@
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    
+
     .video-card-image img {
         max-width: 100%;
     }
@@ -530,7 +530,7 @@
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .sport-main-image {
         flex: 0 0 auto;
         width: 100%;
@@ -604,11 +604,11 @@
         width: 100%;
         margin-left: 0;
     }
-    
+
     .sport-main-title {
         font-size: 24px;
     }
-    
+
     .sport-card-title {
         font-size: 16px;
     }
@@ -619,7 +619,7 @@
         flex-direction: column;
         gap: 25px;
     }
-    
+
     .sport-card {
         flex: 0 0 100%;
         max-width: 100%;
@@ -748,7 +748,7 @@
         width: 100%;
         margin-left: 0;
     }
-    
+
     .article-title {
         font-size: 18px;
     }
@@ -758,7 +758,7 @@
     .article-image {
         flex: 0 0 150px;
     }
-    
+
     .article-image img {
         height: 100px;
     }
@@ -769,17 +769,482 @@
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .article-image {
         flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .article-image img {
         width: 100%;
         height: auto;
         max-height: 200px;
+    }
+}
+/* VIDEO CAROUSEL SECTION */
+.video-carousel-section {
+    margin-top: 50px; /* Ridotto da 60px a 50px */
+    width: 100%;
+    max-width: 732px;
+    margin-left: 15px;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* IN PIEMONTE SECTION */
+.in-piemonte-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.in-piemonte-section .section-header {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.in-piemonte-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+.in-piemonte-section .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #003660;
+}
+
+/* Custom 5-column grid */
+.col-lg-1-5 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-1-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.piemonte-article {
+    margin-bottom: 15px;
+}
+
+.piemonte-article .article-image {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.piemonte-article .article-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.piemonte-article:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.piemonte-article .article-tag {
+    margin: 8px 0;
+}
+
+.piemonte-article .tag-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0066cc;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0;
+}
+
+.piemonte-article .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 8px 0;
+}
+
+.piemonte-article .article-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.piemonte-article .article-title a:hover {
+    color: #0066cc;
+}
+
+.piemonte-article .article-byline {
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .piemonte-articles {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .piemonte-article .article-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .piemonte-articles {
+        margin: 0 -15px;
+    }
+    
+    .piemonte-article {
+        padding: 0 15px;
+    }
+}
+
+/* LARGE ADVERTISEMENT BANNER */
+.adv-banner-large {
+    width: 100%;
+    max-width: 996px;
+    margin: 40px auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.adv-banner-large .adv-label {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.adv-banner-large .adv-content {
+    width: 100%;
+    height: 272px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.adv-banner-large .adv-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Advertisement inside video carousel section */
+.adv-middle-container {
+    width: 100%;
+    max-width: 996px;
+    margin: 30px auto 0;
+    position: relative;
+    padding: 0;
+}
+
+.adv-middle-container .adv-label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.adv-middle-content {
+    width: 100%;
+    height: 272px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.adv-middle-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .adv-banner-large {
+        max-width: 100%;
+    }
+    
+    .adv-middle-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .adv-banner-large .adv-content {
+        height: auto;
+        aspect-ratio: 996/272;
+    }
+    
+    .adv-middle-content {
+        height: auto;
+        aspect-ratio: 996/272;
+    }
+}
+
+.video-carousel-header {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-carousel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+.video-carousel-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #003660;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Ensure vertical alignment */
+}
+
+.carousel-control {
+    width: 32px; /* Equal width */
+    height: 32px; /* Equal height */
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-control:hover {
+    background-color: #0066a4; /* Blue hover state */
+}
+
+.carousel-control:hover i {
+    color: #fff; /* White icon on hover */
+}
+
+.carousel-control i {
+    color: #333;
+    font-size: 14px;
+}
+
+.video-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-carousel {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding-bottom: 10px; /* Space for scrollbar */
+}
+
+.video-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.video-carousel-item {
+    flex: 0 0 300px;
+    max-width: 300px;
+    position: relative;
+    margin-bottom: 20px; /* Added margin at the bottom */
+}
+
+.video-thumbnail {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.video-carousel-item:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.play-button i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.video-carousel-item:hover .play-button {
+    opacity: 1;
+}
+
+.video-content {
+    padding: 5px 0;
+}
+
+.video-category {
+    color: #0066a4;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.video-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; /* Increased from 16px for better readability */
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 10px 0; /* Increased from 5px for better spacing */
+}
+
+.video-title a {
+    color: #0C2230;
+    text-decoration: none;
+}
+
+.video-title a:hover {
+    text-decoration: underline;
+}
+
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px; /* Aumentato da 20px a 30px per creare più spazio dalla linea */
+    margin-bottom: 20px;
+}
+
+.pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pagination-dot.active {
+    background-color: #003660;
+}
+
+/* Add section divider */
+.video-carousel-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .video-carousel-section {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .video-carousel-item {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-carousel-item {
+        flex: 0 0 260px;
+        max-width: 260px;
+    }
+
+    .video-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-carousel {
+        gap: 15px;
+    }
+
+    .video-carousel-item {
+        flex: 0 0 240px;
+        max-width: 240px;
     }
 }
