@@ -971,7 +971,7 @@
 }
 
 .audio-article-title a:hover {
-    text-decoration: underline;
+
 }
 
 .audio-article-author {
@@ -1088,7 +1088,6 @@
     background-color: #003660;
 }
 
-/* Custom 5-column grid */
 .col-lg-1-5 {
     position: relative;
     width: 100%;
@@ -1120,7 +1119,7 @@
 }
 
 .piemonte-article:hover .article-image img {
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .piemonte-article .article-tag {
@@ -1130,7 +1129,7 @@
 .piemonte-article .tag-label {
     font-size: 12px;
     font-weight: 600;
-    color: #0066cc;
+    color: #245D8B;
     text-transform: uppercase;
     background-color: transparent;
     padding: 0;
@@ -1142,15 +1141,16 @@
     font-weight: 700;
     line-height: 1.3;
     margin: 8px 0;
+    color: #0C2230;
 }
 
 .piemonte-article .article-title a {
-    color: #333;
+
     text-decoration: none;
 }
 
 .piemonte-article .article-title a:hover {
-    color: #0066cc;
+    color: rgb(58, 125, 181);
 }
 
 .piemonte-article .article-byline {
@@ -1525,7 +1525,7 @@
         width: 100%;
         margin-left: 0;
     }
-    
+
     .video-carousel-item {
         flex: 0 0 280px;
         max-width: 280px;
@@ -1591,7 +1591,6 @@
     background-color: #003660;
 }
 
-/* Left side articles with images */
 .politica-article {
     margin-bottom: 15px;
 }
@@ -1609,7 +1608,7 @@
 }
 
 .politica-article:hover .article-image img {
-    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .politica-article .article-tag,
@@ -1621,7 +1620,7 @@
 .politica-text-article .tag-label {
     font-size: 12px;
     font-weight: 600;
-    color: #0066cc;
+    color: #245D8B;
     text-transform: uppercase;
     background-color: transparent;
     padding: 0;
@@ -1634,17 +1633,13 @@
     font-weight: 700;
     line-height: 1.3;
     margin: 8px 0;
-}
+    color: #0C2230;
 
-.politica-article .article-title a,
-.politica-text-article .article-title a {
-    color: #333;
-    text-decoration: none;
 }
 
 .politica-article .article-title a:hover,
 .politica-text-article .article-title a:hover {
-    color: #0066cc;
+    color: rgb(58, 125, 181);
 }
 
 .politica-article .article-byline,
@@ -1855,7 +1850,7 @@
 }
 
 .audio-article-title a:hover {
-    text-decoration: underline;
+   color : rgb(16, 55, 96)
 }
 
 .audio-article-author {
@@ -1864,7 +1859,6 @@
     font-weight: 500;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
     .audioarticoli-carousel {
         gap: 15px;
@@ -1959,13 +1953,13 @@
 
 .tech-content {
     display: flex;
-    gap: 40px; /* Increased from 25px to 40px for more spacing */
+    gap: 40px;
     margin-bottom: 30px;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 30px;
 }
 
-/* Left Column */
+
 .tech-left-column {
     flex: 0 0 225px;
     max-width: 225px;
@@ -2004,7 +1998,7 @@
 }
 
 .tech-article-title a:hover {
-    text-decoration: underline;
+   color: rgb(58, 125, 181);
 }
 
 .tech-article-author {
@@ -2017,17 +2011,16 @@
 
 .tech-divider {
     height: 1px;
-    background-color: #999; /* Darker color for better visibility */
-    margin: 20px 0; /* Increased from 15px to 20px */
+    background-color: #999;
+    margin: 20px 0;
 }
 
 /* Center Column */
 .tech-center-column {
     flex: 0 0 450px;
     max-width: 450px;
-    /* Add only left border for separation */
     border-left: 1px solid #e5e5e5;
-    padding-left: 30px; /* Add padding only on the left side */
+    padding-left: 30px;
 }
 
 .tech-main-article {
@@ -2066,10 +2059,9 @@
 }
 
 .tech-main-title a:hover {
-    text-decoration: underline;
+  color: rgb(58, 125, 181);
 }
 
-/* Right Column */
 .tech-right-column {
     flex: 0 0 225px;
     max-width: 225px;
@@ -2093,10 +2085,9 @@
 }
 
 .tech-list-title a:hover {
-    text-decoration: underline;
+    color: rgb(58, 125, 181);
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .tech-content {
         flex-wrap: wrap;
