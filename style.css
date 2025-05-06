@@ -1,85 +1,70 @@
-
+/* 1) Blu di sfondo solo su body, non su layout-container */
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #3498db;
-    height: 100%;
+    background-color: #3498db; /* blu */
 }
 
-/* Top ad banner */
+/* Top ad banner rimane blu */
 .top-ad-banner {
     width: 100%;
-    position: relative;
     height: 140px;
     background-color: #3498db;
+    position: relative;
 }
-
 .top-ad-banner::before {
     content: "adv";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-weight: bold;
 }
 
+/* 2) Layout container non ha più sfondo */
 .layout-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: none;
-    background-color: #3498db;
-    min-height: 100%;
-    margin: 0 ;
+    margin: 0;
     padding: 0;
-
 }
 
-/* Side ad columns */
+/* Banner laterali: no min-height, sfondo blu ereditato dal body */
 .ad-column {
     width: 160px;
-    background-color: #3498db;
-   flex-shrink: 0;
-    min-height: 100vh;
+    flex-shrink: 0;
+    background-color: transparent; /* tolto il blu */
+    height: auto;                   /* sparito min-height:100vh */
 }
 
-
-/* Main content area */
+/* 3) Contenitore bianco */
 .main-content {
-    max-width: 1140px;
     width: 100%;
-    background-color: transparent;
-    padding: 0 ;
+    max-width: 1140px;
     margin: 0;
+    padding: 0;
+    background: transparent;
 }
 .main-content-inner {
     background-color: #f3f7fa;
-    margin: 0 auto;
+    padding: 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1400px) {
+/* HIDE ADV BANNER LATERALI SU MOBILE */
+@media (max-width: 992px) {
     .ad-column {
-        width: 120px;
+        display: none !important;
     }
 }
 
-@media (max-width: 1200px) {
-    .layout-container {
-        flex-direction: column;
-    }
-    .ad-column {
-        width: 100%;
-        height: 50px;
-        margin: 10px 0;
-    }
-}
-
+/* Mantieni il contenitore bianco a piena larghezza su mobile */
 @media (max-width: 576px) {
-    .top-logo-bar .logo {
-        font-size: 40px;
+    .main-content {
+        padding: 0 15px;
+    }
+    .main-content-inner {
+        margin: 0;
     }
 }
-
-
