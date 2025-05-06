@@ -34,20 +34,20 @@ body {
 
 .top-bar-content {
     display: flex;
-    justify-content: space-between; /* Ensure items are pushed to edges */
+    justify-content: space-between;
     align-items: center;
 }
 
 .premium-section {
     display: flex;
     align-items: center;
-    margin-right: auto; /* Push to the left */
+    margin-right: auto;
 }
 
 .auth-section {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Push to the right */
+    margin-left: auto;
 }
 
 .quotidiano {
@@ -207,7 +207,7 @@ body {
 
 .nav-container {
     display: flex;
-    justify-content: space-between; /* This ensures items are pushed to edges */
+    justify-content: space-between;
     align-items: center;
     height: 32px;
 }
@@ -261,7 +261,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--primary-blue); /* Cambiato il colore al blu della foto */
+    color: var(--primary-blue);
     font-size: 13px;
     font-weight: 600;
     display: flex;
@@ -276,15 +276,14 @@ body {
     font-size: 10px;
 }
 
-/* Adv Banner - Moving from editorial-section.css to header.css */
 .adv-banner {
     width: 100%;
-    margin: 0; /* Remove margin to eliminate white space */
+    margin: 0;
     padding: 0;
     text-align: center;
     position: relative;
     height: 90px;
-    background-color: #f0f0f0; /* Neutral gray */
+    background-color: #f0f0f0;
 }
 
 .adv-banner::before {
@@ -330,14 +329,12 @@ body {
     }
 }
 
-/* Disable hover effect on left navbar items */
 .nav-left .nav-link:hover {
-    color: inherit; /* Keeps the original color on hover */
+    color: inherit;
     text-decoration: none;
     background-color: transparent;
 }
 
-/* Keep hover effect only for right navbar items */
 .nav-right .nav-link:hover:not(.torino-link) {
     color: var(--accent-blue);
 }

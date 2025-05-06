@@ -1,11 +1,9 @@
-/* 1) Blu di sfondo solo su body, non su layout-container */
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #3498db; /* blu */
+    background-color: #3498db;
 }
 
-/* Top ad banner rimane blu */
 .top-ad-banner {
     width: 100%;
     height: 140px;
@@ -22,7 +20,6 @@ html, body {
     font-weight: bold;
 }
 
-/* 2) Layout container non ha più sfondo */
 .layout-container {
     display: flex;
     justify-content: center;
@@ -31,15 +28,13 @@ html, body {
     padding: 0;
 }
 
-/* Banner laterali: no min-height, sfondo blu ereditato dal body */
 .ad-column {
     width: 160px;
     flex-shrink: 0;
-    background-color: transparent; /* tolto il blu */
-    height: auto;                   /* sparito min-height:100vh */
+    background-color: transparent;
+    height: auto;
 }
 
-/* 3) Contenitore bianco */
 .main-content {
     width: 100%;
     max-width: 1140px;
@@ -52,14 +47,12 @@ html, body {
     padding: 0;
 }
 
-/* HIDE ADV BANNER LATERALI SU MOBILE */
 @media (max-width: 992px) {
     .ad-column {
         display: none !important;
     }
 }
 
-/* Mantieni il contenitore bianco a piena larghezza su mobile */
 @media (max-width: 576px) {
     .main-content {
         padding: 0 15px;

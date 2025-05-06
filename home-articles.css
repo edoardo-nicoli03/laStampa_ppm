@@ -349,7 +349,6 @@
     font-weight: 600;
 }
 
-/* Grid layout for secondary articles */
 .sport-grid {
     display: flex;
     flex-direction: column;
@@ -397,7 +396,6 @@
     color : rgb(58, 125, 181);
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .sport-section {
         width: 100%;
@@ -509,7 +507,7 @@
 
 .article-category {
     color: #245D8B;
-    font-size: 14px; /* Increased font size */
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -531,16 +529,16 @@
 }
 .article-category {
     color: #0066a4;
-    font-size: 15px; /* Slightly increased font size */
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 10px; /* Increased margin */
+    margin-bottom: 10px;
 }
 
 .article-author {
-    font-size: 15px; /* Increased font size */
+    font-size: 15px;
     color: #666;
-    margin-top: 10px; /* Increased margin */
+    margin-top: 10px;
     font-weight: 600;
 }
 
@@ -673,13 +671,13 @@
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     padding-bottom: 10px;
 }
 
 .audioarticoli-carousel::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .audio-article-card {
@@ -860,7 +858,7 @@
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for desktop */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     padding: 0 15px;
@@ -883,7 +881,6 @@
     transition: transform 0.3s ease;
 }
 
-/* Play button for video cards */
 .video-card-image::after {
     content: "\f04b";
     font-family: "Font Awesome 5 Free";
@@ -903,7 +900,6 @@
     font-size: 16px;
 }
 
-/* Responsive adjustments for video section */
 @media (max-width: 992px) {
     .video-section {
         width: 100%;
@@ -914,17 +910,17 @@
 
 @media (max-width: 768px) {
     .video-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .video-card-title {
-        font-size: 16px; /* Smaller font on tablets */
+        font-size: 16px;
     }
 }
 
 @media (max-width: 576px) {
     .video-grid {
-        grid-template-columns: 1fr; /* 1 column for smartphones */
+        grid-template-columns: 1fr;
         gap: 25px;
     }
     
@@ -933,7 +929,7 @@
     }
     
     .video-card-title {
-        font-size: 14px; /* Even smaller font on smartphones */
+        font-size: 14px;
     }
 }
 
@@ -1047,7 +1043,6 @@
     font-weight: 500;
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .piemonte-articles {
         flex-wrap: wrap;
@@ -1146,7 +1141,6 @@
     font-weight: 300;
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .adv-970x250 {
         width: 100%;
@@ -1155,7 +1149,6 @@
     }
 }
 
-/* Advertisement inside video carousel section */
 .adv-middle-container {
     width: 100%;
     max-width: 996px;
@@ -1189,7 +1182,6 @@
     object-fit: contain;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .adv-banner-large {
         max-width: 100%;
@@ -1310,7 +1302,6 @@
     font-weight: 500;
 }
 
-/* Right side text-only articles */
 .politica-text-article {
     margin-bottom: 15px;
 }
@@ -1320,7 +1311,6 @@
     border-top: 1px solid #e5e5e5;
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .politica-section {
         width: 100%;
@@ -1426,13 +1416,13 @@
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     padding-bottom: 10px;
 }
 
 .audioarticoli-carousel::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .audio-article-card {
